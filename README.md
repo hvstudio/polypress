@@ -10,14 +10,16 @@ Malé CMS, postavené na Nette
 ```
 polypress/
 ├── App/                             ← adresář s aplikací
+│   ├── Admin/                       ← CMS administrace
+│   │   └── ...
 │   ├── Config/                      ← konfigurační soubory
 │   │   ├── config.neon              ← konfigurační soubor
 │   │   └── config.local.neon
 │   ├── Forms/                       ← třídy formulářů
 │   ├── Presenters/                  ← třídy presenterů
 │   │   ├── HomepagePresenter.php    ← třída presenteru Homepage
-│   ├── Templates/                   ← adresář se šablonami
-│   │   └── Default                  ← vzhledy, Default je výchozí
+│   ├── Templates/                   ← adresář se vzhledy
+│   │   └── Default                  ← jeden ze vzhledů, Default je výchozí
 │   │       ├── @layout.latte        ← šablona společného layoutu pro tento vzhled
 │   │       └── Homepage/            ← šablony presenteru Homepage
 │   │           └── default.latte    ← šablona akce default
@@ -34,9 +36,10 @@ polypress/
 └── www/                             ← veřejný adresář, document root projektu
     ├── .htaccess                    ← pravidla pro mod_rewrite
     ├── index.php                    ← který spouští aplikaci
-    │   └── templates/               ← adresář se šablonami
-    │       ├── images/              ← další adresáře, třeba pro obrázky
-    │       ├── webtemp/             ← adresář pro sloučené a minifikované css a js
-    │       └── favicon.ico          ← ikona pro tento vzhled
+    │   └── templates/               ← adresář se vzhledy
+    │       └── default              ← složka se vzhledem, default je výchozí, jediný dodávaný v systému
+    │           ├── images/          ← další adresáře, třeba pro obrázky
+    │           ├── webtemp/         ← adresář pro sloučené a minifikované css a js
+    │           └── favicon.ico      ← ikona pro tento vzhled
     └── images/                      ← další adresáře, třeba pro obrázky společné napříč vzhledy
 ```
