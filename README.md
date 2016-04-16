@@ -2,9 +2,9 @@
 Malé CMS, postavené na Nette
 
 ## Primární cíle
-1/ umožnit výrobu webu v nette kodérovi  
-2/ vyhnout se vytváření presenterům prio každou stránku ``ONasPresenter``, ``KontaktPresenter``  
-3/ ...  
+1/ zrychlit výrobu jednotuchého webu  
+2/ přenést váhu s výrobou na redaktora a kodéra    
+3/ vyhnout se vytváření presenterům prio každou stránku ``ONasPresenter``, ``KontaktPresenter``  
 
 ## Základní struktura aplikace
 ```
@@ -16,7 +16,7 @@ polypress/
 │   │   ├── config.neon              ← konfigurační soubor
 │   │   └── config.local.neon
 │   ├── Forms/                       ← třídy formulářů
-│   ├── Presenters/                  ← třídy presenterů
+│   ├── Presenters/                  ← třídy presenterů - společných pro všechny vzhledy
 │   │   ├── HomepagePresenter.php    ← třída presenteru Homepage
 │   ├── Templates/                   ← adresář se vzhledy
 │   │   └── Default                  ← jeden ze vzhledů, Default je výchozí
