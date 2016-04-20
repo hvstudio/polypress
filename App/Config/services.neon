@@ -1,0 +1,6 @@
+services:
+    - App\Forms\SignFormFactory
+    router: App\RouterFactory::createRouter
+
+    - Libs\Security\Authenticator
+    - Libs\Security\Facade\UserFacade

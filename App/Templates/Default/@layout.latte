@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>{ifset title}{include title|striptags}{/ifset}</title>
+    <link rel="stylesheet" href="{$basePath}/assets/css/compiled.css">
+
+    <script n:syntax="off">
+        function onJquery(method) {if (window.jQuery) {method();}else {setTimeout(function () {onJquery(method)}, 10);}}
+    </script>
+    {block head}{/block}
+</head>
+
+<body>
+<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+{include content}
+
+<script src="{$basePath}/assets/js/compiled.js"></script>
+{block scripts}
+{/block}
+</body>
+</html>

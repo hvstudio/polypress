@@ -1,0 +1,32 @@
+log/*
+temp/*
+vendor/*
+
+node_modules
+www/assets
+
+.DS_Store
+!.gitignore
+!.htaccess
+!web.config
+App/Config/config.local.neon
+
+!.gitkeep
+
+### PhpStorm ###
+.idea/
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml

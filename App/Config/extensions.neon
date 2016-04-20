@@ -1,0 +1,8 @@
+extensions:
+    ajaxHistory: VojtechDobes\NetteAjax\HistoryExtension
+    annotations: Kdyby\Annotations\DI\AnnotationsExtension
+    autowired: Kdyby\Autowired\DI\AutowiredExtension
+    console: Kdyby\Console\DI\ConsoleExtension
+    events: Kdyby\Events\DI\EventsExtension
+    doctrine: Kdyby\Doctrine\DI\OrmExtension
+    doctrine2identity: Majkl578\NetteAddons\Doctrine2Identity\DI\IdentityExtension
