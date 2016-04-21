@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "hash": "37c5f33426c161b009297da00d36d0cd",
-    "content-hash": "ac6c0c7f9017378f0a018e68266c0228",
+    "hash": "606b7b7b61251d1e75c8676391ee31b7",
+    "content-hash": "f89c60616b487e4756a9968166fbb3fd",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -96,10 +95,7 @@
                 "seo"
             ],
             "time": "2015-05-25 16:33:55"
-=======
-    "hash": "b1c87016e48888527471eaae11ac9b29",
-    "content-hash": "df4a5727adf3523b09cb93bac4a6070c",
-    "packages": [
+        },
         {
             "name": "carrooi/nette-menu",
             "version": "1.1.1",
@@ -146,7 +142,6 @@
                 "nette"
             ],
             "time": "2015-07-18 13:26:13"
->>>>>>> 1e949b16e1757e5ddc3f770474663afd1df7ff2e
         },
         {
             "name": "doctrine/annotations",

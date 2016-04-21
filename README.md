@@ -9,9 +9,9 @@ Malé CMS, postavené na Nette
 ## Instalace PolyPressu
 - ```git clone https://github.com/PolywebCZ/polypress.git```   
 - přejmenovat ```App/Config/config.local.neon.disc``` na ```App/Config/config.local.neon``` a doplnit údaje pro databázi
-- ```composer update```
-- ```php www/index.php orm:generate-proxies```  
-- ```php www/index.php orm:schema-tool:update --force```  
+- pomocí ```composer install``` dotáhnete knihovny třetích stran
+- ```php www/index.php orm:generate-proxies```  a pak ```php www/index.php orm:schema-tool:update --force```    
+- pokud chcete ukázková data, tak: - ```php www/index.php dbal:import start.sql```, CMS ale beží i bez nich
 
 ## Základní struktura aplikace
 ```
