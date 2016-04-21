@@ -24,6 +24,7 @@
         "kdyby/autowired": "^1.3",
         "kdyby/console": "^2.4",
         "vojtech-dobes/nette-ajax-history": "^2.0",
-        "majkl578/nette-identity-doctrine": "^2.2"
+        "majkl578/nette-identity-doctrine": "^2.2",
+        "carrooi/nette-menu": "^1.1"
     }
 }
