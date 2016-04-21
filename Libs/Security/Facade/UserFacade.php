@@ -21,7 +21,6 @@ class UserFacade
 	private $users;
 
 
-
 	/**
 	 * @param EntityManager $em
 	 */
@@ -30,7 +29,6 @@ class UserFacade
 		$this->em = $em;
 		$this->users = $em->getRepository(\Libs\Security\Entity\User::getClassName());
 	}
-
 
 
 	/**

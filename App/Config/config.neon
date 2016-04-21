@@ -26,4 +26,3 @@ includes:
     - extensions.neon
     - services.neon
     - console.neon
-    - %appDir%../../Templates/theme.neon
