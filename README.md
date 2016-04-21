@@ -48,5 +48,6 @@ PolyPress/
 
 ## Instalace PolyPressu
 - ```git clone https://github.com/PolywebCZ/polypress.git```   
-- přejmenovat ```App/Config/config.local.neon.disc``` na ```App/Config/config.local.neon``` a doplnit údaje pro databázi  
+- přejmenovat ```App/Config/config.local.neon.disc``` na ```App/Config/config.local.neon``` a doplnit údaje pro databázi
+- ```composer install```  
 - ```php www/index.php orm:schema-tool:update --force```   
