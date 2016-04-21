@@ -6,6 +6,13 @@ Malé CMS, postavené na Nette
 2/ přenést váhu s výrobou na redaktora (a nejsou-li šablony, tak na kodéra)  
 3/ vyhnout se vytváření presenterům prio každou stránku ``ONasPresenter``, ``KontaktPresenter``  
 
+## Instalace PolyPressu
+- ```git clone https://github.com/PolywebCZ/polypress.git```   
+- přejmenovat ```App/Config/config.local.neon.disc``` na ```App/Config/config.local.neon``` a doplnit údaje pro databázi
+- pomocí ```composer install``` dotáhnete knihovny třetích stran
+- ```php www/index.php orm:generate-proxies```  a pak ```php www/index.php orm:schema-tool:update --force```    
+- pokud chcete ukázková data, tak: - ```php www/index.php dbal:import start.sql```, CMS ale beží i bez nich
+
 ## Základní struktura aplikace
 ```
 PolyPress/
@@ -44,10 +51,4 @@ PolyPress/
     │           └── favicon.ico      ← ikona pro tento vzhled
     └── images/                      ← další adresáře, třeba pro obrázky společné napříč vzhledy
 ```
-
-
-## Instalace PolyPressu
-- ```git clone https://github.com/PolywebCZ/polypress.git```   
-- přejmenovat ```App/Config/config.local.neon.disc``` na ```App/Config/config.local.neon``` a doplnit údaje pro databázi
-- ```composer install```  
-- ```php www/index.php orm:schema-tool:update --force```   
+ 

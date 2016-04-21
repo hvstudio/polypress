@@ -19,12 +19,17 @@
         }
     ],
     "require": {
+        "brabijan/nette-seo-components": "@dev",
         "nette/nette": "^2.3",
+        "janmarek/webloader": "^2.5",
         "kdyby/doctrine": "^3.0",
         "kdyby/autowired": "^1.3",
         "kdyby/console": "^2.4",
+        "librette/doctrine-sortable": "^0.2",
         "vojtech-dobes/nette-ajax-history": "^2.0",
         "majkl578/nette-identity-doctrine": "^2.2",
+        "oyejorge/less.php": "v1.7.0.10",
+        "zenify/doctrine-behaviors": "dev-master",
         "carrooi/nette-menu": "^1.1"
     }
 }
