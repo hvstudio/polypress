@@ -4,9 +4,98 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3001a7cf17803df06d0bf3c194bee831",
-    "content-hash": "3a293e891405d9dad754dbf5d640bd0d",
+    "hash": "37c5f33426c161b009297da00d36d0cd",
+    "content-hash": "ac6c0c7f9017378f0a018e68266c0228",
     "packages": [
+        {
+            "name": "behat/transliterator",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/Transliterator.git",
+                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/868e05be3a9f25ba6424c2dd4849567f50715003",
+                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Transliterator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Artistic-1.0"
+            ],
+            "description": "String transliterator",
+            "keywords": [
+                "i18n",
+                "slug",
+                "transliterator"
+            ],
+            "time": "2015-09-28 16:26:35"
+        },
+        {
+            "name": "brabijan/nette-seo-components",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brabijan/nette-seo-components.git",
+                "reference": "0b8c63a9ce1e9d0362c17a079a6e4260d2db7dca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brabijan/nette-seo-components/zipball/0b8c63a9ce1e9d0362c17a079a6e4260d2db7dca",
+                "reference": "0b8c63a9ce1e9d0362c17a079a6e4260d2db7dca",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/doctrine": "@dev",
+                "nette/nette": ">= 2.2.0"
+            },
+            "require-dev": {
+                "nette/tester": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Brabec"
+                }
+            ],
+            "description": "SEO components for Nette Framework",
+            "keywords": [
+                "Sitemap",
+                "google analytics",
+                "google webmaster tools",
+                "nette",
+                "router",
+                "seo"
+            ],
+            "time": "2015-05-25 16:33:55"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -607,6 +696,92 @@
             "time": "2016-01-05 21:34:58"
         },
         {
+            "name": "janmarek/webloader",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/janmarek/WebLoader.git",
+                "reference": "95aabba0522c82eb7e201f25486abd76a8379ea4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/95aabba0522c82eb7e201f25486abd76a8379ea4",
+                "reference": "95aabba0522c82eb7e201f25486abd76a8379ea4",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "~2.3@dev",
+                "nette/di": "~2.3@dev",
+                "nette/utils": "~2.3@dev"
+            },
+            "require-dev": {
+                "coffeescript/coffeescript": "1.3.*",
+                "jakub-onderka/php-parallel-lint": "~0.7",
+                "latte/latte": "~2.3@dev",
+                "leafo/scssphp": "~0.1",
+                "mockery/mockery": "0.7.*",
+                "nette/application": "~2.3@dev",
+                "nette/bootstrap": "~2.3@dev",
+                "nette/caching": "~2.3@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.3@dev",
+                "nette/deprecated": "~2.2@dev",
+                "nette/di": "~2.3@dev",
+                "nette/finder": "~2.3@dev",
+                "nette/forms": "~2.3@dev",
+                "nette/http": "~2.3@dev",
+                "nette/mail": "~2.3@dev",
+                "nette/neon": "~2.3@dev",
+                "nette/php-generator": "~2.3@dev",
+                "nette/reflection": "~2.3@dev",
+                "nette/robot-loader": "~2.3@dev",
+                "nette/safe-stream": "~2.3@dev",
+                "nette/security": "~2.3@dev",
+                "nette/tokenizer": "~2.2@dev",
+                "nette/utils": "~2.3@dev",
+                "oyejorge/less.php": "~1.5",
+                "phpunit/phpunit": "3.7.*",
+                "tracy/tracy": "~2.3@dev"
+            },
+            "suggest": {
+                "coffeescript/coffeescript": "CoffeeScript compiler written in PHP.",
+                "joseki/webloader-filters": "CSSMin & JSMin filters written in PHP.",
+                "leafo/scssphp": "SCSS compiler written in PHP.",
+                "oyejorge/less.php": "LESS compiler written in PHP."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "WebLoader": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Marek",
+                    "email": "mail@janmarek.net"
+                }
+            ],
+            "description": "Tool for loading or deploying CSS and JS files into web pages",
+            "homepage": "http://addons.nette.org/cs/webloader",
+            "keywords": [
+                "assets",
+                "css",
+                "javascript",
+                "nette",
+                "webloader"
+            ],
+            "time": "2015-09-06 18:15:08"
+        },
+        {
             "name": "kdyby/annotations",
             "version": "v2.3.0",
             "source": {
@@ -1115,6 +1290,72 @@
             "time": "2016-04-19 10:03:12"
         },
         {
+            "name": "knplabs/doctrine-behaviors",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/DoctrineBehaviors.git",
+                "reference": "911dd202be1871d4c4a7d63da02418b033cba9a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/DoctrineBehaviors/zipball/911dd202be1871d4c4a7d63da02418b033cba9a1",
+                "reference": "911dd202be1871d4c4a7d63da02418b033cba9a1",
+                "shasum": ""
+            },
+            "require": {
+                "behat/transliterator": "~1.0",
+                "doctrine/common": ">=2.2",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "doctrine/orm": ">=2.2",
+                "ext-pdo_mysql": "*",
+                "ext-pdo_pgsql": "*",
+                "ext-pdo_sqlite": "*",
+                "hexmedia/yaml-linter": "~0.1",
+                "jakub-onderka/php-parallel-lint": "~0.8",
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "symfony/framework-bundle": "To be able to use it as a bundle"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\DoctrineBehaviors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs",
+                    "homepage": "http://knplabs.com"
+                }
+            ],
+            "description": "Doctrine2 behavior traits",
+            "homepage": "http://knplabs.com",
+            "keywords": [
+                "Blameable",
+                "behaviors",
+                "doctrine2",
+                "filterable",
+                "softdeletable",
+                "timestampable",
+                "translatable",
+                "tree"
+            ],
+            "time": "2016-03-09 12:09:55"
+        },
+        {
             "name": "latte/latte",
             "version": "v2.3.11",
             "source": {
@@ -1168,6 +1409,59 @@
                 "twig"
             ],
             "time": "2016-04-10 23:40:55"
+        },
+        {
+            "name": "librette/doctrine-sortable",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/librette/doctrine-sortable.git",
+                "reference": "90d9dbe0ba3fad7dc6ffd4b13f05c2d5e17f985e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/librette/doctrine-sortable/zipball/90d9dbe0ba3fad7dc6ffd4b13f05c2d5e17f985e",
+                "reference": "90d9dbe0ba3fad7dc6ffd4b13f05c2d5e17f985e",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/doctrine": "@dev",
+                "kdyby/events": "@dev",
+                "nette/di": "~2.2",
+                "nette/utils": "~2.2"
+            },
+            "require-dev": {
+                "nette/tester": "@dev",
+                "tracy/tracy": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Librette\\Doctrine\\Sortable\\": "src/"
+                },
+                "files": [
+                    "src/exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Matějka",
+                    "homepage": "http://www.matej21.cz"
+                }
+            ],
+            "keywords": [
+                "doctrine",
+                "librette",
+                "nette",
+                "sortable"
+            ],
+            "time": "2015-02-27 15:41:35"
         },
         {
             "name": "majkl578/nette-identity-doctrine",
@@ -2315,6 +2609,68 @@
             "time": "2016-03-18 17:36:54"
         },
         {
+            "name": "oyejorge/less.php",
+            "version": "v1.7.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oyejorge/less.php.git",
+                "reference": "a1e2d3c20794b37ac4d0baeb24613e579584033b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/a1e2d3c20794b37ac4d0baeb24613e579584033b",
+                "reference": "a1e2d3c20794b37ac4d0baeb24613e579584033b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.18"
+            },
+            "bin": [
+                "bin/lessc"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Less": "lib/"
+                },
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Agar",
+                    "homepage": "https://github.com/agar"
+                },
+                {
+                    "name": "Martin Jantošovič",
+                    "homepage": "https://github.com/Mordred"
+                },
+                {
+                    "name": "Josh Schmidt",
+                    "homepage": "https://github.com/oyejorge"
+                }
+            ],
+            "description": "PHP port of the Javascript version of LESS http://lesscss.org",
+            "homepage": "http://lessphp.gpeasy.com",
+            "keywords": [
+                "css",
+                "less",
+                "less.js",
+                "lesscss",
+                "php",
+                "stylesheet"
+            ],
+            "time": "2015-12-30 05:47:36"
+        },
+        {
             "name": "symfony/console",
             "version": "v2.8.4",
             "source": {
@@ -2530,12 +2886,59 @@
                 "nette.ajax.js"
             ],
             "time": "2015-01-17 21:08:34"
+        },
+        {
+            "name": "zenify/doctrine-behaviors",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Zenify/DoctrineBehaviors.git",
+                "reference": "6080d3e33670d05975db7d5350c556e676e3124a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Zenify/DoctrineBehaviors/zipball/6080d3e33670d05975db7d5350c556e676e3124a",
+                "reference": "6080d3e33670d05975db7d5350c556e676e3124a",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/events": "~2.3|~3.0",
+                "knplabs/doctrine-behaviors": "~1.2",
+                "php": ">=5.6",
+                "tracy/tracy": "~2.3"
+            },
+            "require-dev": {
+                "kdyby/doctrine": "~3.0",
+                "nette/bootstrap": "~2.3",
+                "nette/di": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zenify\\DoctrineBehaviors\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomáš Votruba",
+                    "homepage": "http://tomasvotruba.cz"
+                }
+            ],
+            "description": "Integation of KnpLabs/DoctrineBehaviors to Nette\\DI",
+            "time": "2016-03-13 21:08:38"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "brabijan/nette-seo-components": 20,
+        "zenify/doctrine-behaviors": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

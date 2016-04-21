@@ -1,6 +1,6 @@
 <?php
 
-namespace Libs\Security\Entity;
+namespace Libs\Security;
 
 use Doctrine\ORM\Mapping as ORM;
 use Kdyby\Doctrine\Entities\BaseEntity;
@@ -8,6 +8,7 @@ use Nette\Security\IIdentity;
 
 /**
  * @ORM\Entity
+ * @ORM\Table(name="users")
  */
 class User extends BaseEntity implements IIdentity
 {
@@ -25,15 +26,24 @@ class User extends BaseEntity implements IIdentity
 	protected $username;
 
 	/**
+	 * @ORM\Column(type="string", nullable=true)
+	 */
+	protected $mail;
+
+	/**
 	 * @ORM\Column(type="string")
 	 */
 	protected $password;
 
 	/**
-	 * @ORM\Column(type="string")
+	 * @ORM\Column(type="string", nullable=true)
 	 */
 	protected $name;
 
+	/**
+	 * @ORM\Column(type="string", nullable=true)
+	 */
+	protected $surname;
 
 	/**
 	 * @return int
@@ -43,7 +53,6 @@ class User extends BaseEntity implements IIdentity
 		return $this->id;
 	}
 
-
 	/**
 	 * @return string
 	 */
@@ -51,7 +60,6 @@ class User extends BaseEntity implements IIdentity
 	{
 		return $this->username;
 	}
-
 
 	/**
 	 * @param string $username
@@ -61,6 +69,21 @@ class User extends BaseEntity implements IIdentity
 		$this->username = $username;
 	}
 
+	/**
+	 * @return mixed
+	 */
+	public function getMail()
+	{
+		return $this->mail;
+	}
+
+	/**
+	 * @param mixed $mail
+	 */
+	public function setMail($mail)
+	{
+		$this->mail = $mail;
+	}
 
 	/**
 	 * @return string
@@ -70,7 +93,6 @@ class User extends BaseEntity implements IIdentity
 		return $this->password;
 	}
 
-
 	/**
 	 * @param string $password
 	 */
@@ -78,7 +100,6 @@ class User extends BaseEntity implements IIdentity
 	{
 		$this->password = $password;
 	}
-
 
 	/**
 	 * @return string
@@ -88,7 +109,6 @@ class User extends BaseEntity implements IIdentity
 		return $this->name;
 	}
 
-
 	/**
 	 * @param string $name
 	 */
@@ -97,6 +117,21 @@ class User extends BaseEntity implements IIdentity
 		$this->name = $name;
 	}
 
+	/**
+	 * @return mixed
+	 */
+	public function getSurname()
+	{
+		return $this->surname;
+	}
+
+	/**
+	 * @param mixed $surname
+	 */
+	public function setSurname($surname)
+	{
+		$this->surname = $surname;
+	}
 
 	/**
 	 * @return array
