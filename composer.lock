@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "37c5f33426c161b009297da00d36d0cd",
     "content-hash": "ac6c0c7f9017378f0a018e68266c0228",
     "packages": [
@@ -95,6 +96,57 @@
                 "seo"
             ],
             "time": "2015-05-25 16:33:55"
+=======
+    "hash": "b1c87016e48888527471eaae11ac9b29",
+    "content-hash": "df4a5727adf3523b09cb93bac4a6070c",
+    "packages": [
+        {
+            "name": "carrooi/nette-menu",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Carrooi/Nette-Menu.git",
+                "reference": "75cb288fb17e7ecd2cf8fd00f6116088d3d6c4ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Carrooi/Nette-Menu/zipball/75cb288fb17e7ecd2cf8fd00f6116088d3d6c4ea",
+                "reference": "75cb288fb17e7ecd2cf8fd00f6116088d3d6c4ea",
+                "shasum": ""
+            },
+            "require": {
+                "nette/nette": ">= 2.2.0"
+            },
+            "require-dev": {
+                "nette/tester": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DK\\Menu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Kudera",
+                    "email": "kudera.d@gmail.com",
+                    "homepage": "http://davidkudera.com"
+                }
+            ],
+            "description": "Menu controls for Nette framework",
+            "homepage": "https://github.com/Carrooi/Nette-Menu",
+            "keywords": [
+                "breadcrumbs",
+                "control",
+                "menu",
+                "nette"
+            ],
+            "time": "2015-07-18 13:26:13"
+>>>>>>> 1e949b16e1757e5ddc3f770474663afd1df7ff2e
         },
         {
             "name": "doctrine/annotations",
