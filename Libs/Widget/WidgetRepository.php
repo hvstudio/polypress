@@ -9,7 +9,7 @@ use Nette\Object;
 
 /**
  * Class WidgetRepository
- * @package App\Model
+ * @package Libs
  */
 class WidgetRepository extends Object
 {

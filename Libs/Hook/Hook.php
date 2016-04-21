@@ -28,7 +28,7 @@ class Hook extends BaseEntity implements ITargetProvider
 	protected $categories;
 
 	/**
-	 * @ORM\OneToOne(targetEntity="App\Model\Security\User")
+	 * @ORM\OneToOne(targetEntity="Libs\Security\User")
 	 * @ORM\JoinColumn(name="author_id", referencedColumnName="id")
 	 */
 	protected $author;

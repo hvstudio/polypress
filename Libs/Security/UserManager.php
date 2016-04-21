@@ -8,7 +8,7 @@ use Nette\Security\Passwords;
 
 /**
  * Class UserManager
- * @package App\Model\Security
+ * @package Libs\Security
  */
 class UserManager
 {

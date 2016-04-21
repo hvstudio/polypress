@@ -11,7 +11,7 @@ use Nette\Security\Passwords;
 
 /**
  * Class Authenticator
- * @package App\Model\Security
+ * @package Libs\Security
  */
 class Authenticator extends Object implements IAuthenticator
 {
