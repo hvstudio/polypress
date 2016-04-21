@@ -1,0 +1,4 @@
+doctrine:
+    user: sandbox
+    password: sandbox
+    dbname: sandbox

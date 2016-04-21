@@ -1,0 +1,29 @@
+{
+    "name": "polypress",
+    "description": "Malé CMS, postavené na Nette",
+    "type": "project",
+    "license": [
+        "BSD-3-Clause",
+        "GPL-2.0",
+        "GPL-3.0"
+    ],
+    "autoload": {
+        "classmap": [
+            "App/",
+            "Libs/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Petr Steinbauer"
+        }
+    ],
+    "require": {
+        "nette/nette": "^2.3",
+        "kdyby/doctrine": "^3.0",
+        "kdyby/autowired": "^1.3",
+        "kdyby/console": "^2.4",
+        "vojtech-dobes/nette-ajax-history": "^2.0",
+        "majkl578/nette-identity-doctrine": "^2.2"
+    }
+}
